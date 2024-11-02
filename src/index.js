@@ -32,7 +32,7 @@ const io = require("socket.io")(server, {
         credentials: true, // Optional, based on your needs
     },
     cors: {
-        origin: "https://8426-37-111-227-86.ngrok-free.app", // Replace with your frontend URL
+        origin: "https://web-rtc-backend-iiy3.onrender.com", // Replace with your frontend URL
         methods: ["GET", "POST"],
         credentials: true, // Optional, based on your needs
     },
