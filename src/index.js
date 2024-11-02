@@ -27,14 +27,9 @@ app.use(cors(corsOptions));
 // Socket.IO instance with CORS options
 const io = require("socket.io")(server, {
     cors: {
-        origin: "http://localhost:3000", // Replace with your frontend URL
+        origin: ["http://localhost:3000", "https://web-rtc-backend-iiy3.onrender.com"], // Allow multiple origins
         methods: ["GET", "POST"],
-        credentials: true, // Optional, based on your needs
-    },
-    cors: {
-        origin: "https://web-rtc-backend-iiy3.onrender.com", // Replace with your frontend URL
-        methods: ["GET", "POST"],
-        credentials: true, // Optional, based on your needs
+        credentials: true,
     },
 });
 
