@@ -27,7 +27,7 @@ app.use(cors(corsOptions));
 // Socket.IO instance with CORS options
 const io = require("socket.io")(server, {
     cors: {
-        origin: ["http://localhost:3000", "https://88da-37-111-227-86.ngrok-free.app"], // Allow multiple origins
+        origin: ["http://localhost:3000", "https://206e-37-111-232-245.ngrok-free.app"], // Allow multiple origins
         methods: ["GET", "POST"],
         credentials: true,
     },
